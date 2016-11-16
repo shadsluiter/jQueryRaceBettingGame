@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>jQuery Car Racer 2.0</title>
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="sweetalert-master/sweetalert-master/dist/sweetalert.css">
+        <link rel="stylesheet" href="css/animate.css" />
+    </head>
+    
+    <body id="race">
+        <h1 class='animated lightSpeedIn'>Car Racer</h1>
+		<h2 id="instructionstitle">Click here for Instructions</h2>
+		<div id="intruct">
+			<h1 id="intructH"> You have 3 levels. Choose your car and bet money. <br />
+			<ul>
+			<li>Level 1: 0-250<br /></li>
+			<li>Level 2: 250-350<br /></li>
+			<li>Level 3: 350 - WIN!<br /></li>
+			</ul>
+			Try to reach $500 to win.<br />
+			<br />
+			* You may need to zoom out to see better!*</h1>
+		</div>
+        <form id="myForm">
+		<input type="radio" class="radioBtnClass" name="radioName" value="0" checked="checked" /> Green 
+		<input type="radio" class="radioBtnClass" name="radioName" value="1" /> Red 
+		<input type="radio" class="radioBtnClass" name="radioName" value="2" id = "purpleBet"> Purple</input> 
+		<input type="radio" class="radioBtnClass" name="radioName" value="3" id = "blueBet"/> Blue 
+		<input type="radio" class="radioBtnClass" name="radioName" value="4" id = "pinkBet"/> Pink 
+		<input type="radio" class="radioBtnClass" name="radioName" value="5" id = "brownBet"/> Brown 
+		</form>
+		<input type="text" id="txt_name" value="10" />
+		
+		<br>
+		<h1 id = "betMoney">$200</h1>
+		
+        <input type="button" value="Race!" id="go">
+        <input type="button" value="Reset" id="reset">
+		
+		<div id="levelNum">
+			<h1 id= 'levelH'></h1>
+		</div>
+        <div id="racetrack">
+            <img src="img/car1.png" alt="Green car" id="car1" class="car">
+            <img src="img/car2.png" alt="Red car" id="car2" class="car">
+        </div>
+		
+		<div id="racetrack2">
+            <img src="img/car3.png" alt="Green car" id="car3" class="car">
+            <img src="img/car4.png" alt="Red car" id="car4" class="car">
+        </div>
+        
+		<div id="racetrack3">
+            <img src="img/car5.png" alt="Green car" id="car5" class="car">
+            <img src="img/car6.png" alt="Red car" id="car6" class="car">
+        </div>
+        
+        <div id="raceInfoContainer" class="clearfix"> 
+            <h2>Results</h2>
+            <div id="raceInfo1" class="raceInfo">Green<span></span></div>
+            <div id="raceInfo2" class="raceInfo">Red<span></span></div>
+			<div id="raceInfo3" class="raceInfo">Purple<span></span></div>
+            <div id="raceInfo4" class="raceInfo">Blue<span></span></div>
+			<div id="raceInfo5" class="raceInfo">Pink<span></span></div>
+            <div id="raceInfo6" class="raceInfo">Brown<span></span></div>
+        </div>
+		
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.3.min.js" ></script>
+		
+        <!-- Load the CDN first -->
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		
+        <!-- If CDN fails to load, serve up the local version -->
+        <script>window.jQuery || document.write('<script src="js/jquery-2.1.4.js"><\/script>');</script>
+        
+        <script src="js/script.js"></script>
+		
+		<script src="sweetalert-master/sweetalert-master/dist/sweetalert.min.js"></script>
+
+    </body>
+    
+</html>
+
